@@ -1,0 +1,20 @@
+{
+  "name": "ChartsSwiftUI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/intuit/ChartsSwiftUI.git",
+  "author": "merattandeep@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@auto-it/all-contributors": "10.9.1",
+    "@auto-it/cocoapods": "10.9.1",
+    "@auto-it/conventional-commits": "10.9.1",
+    "@auto-it/jira": "10.9.1",
+    "@auto-it/pr-body-labels": "10.9.1",
+    "@auto-it/released": "10.9.1",
+    "@auto-it/slack": "10.9.1",
+    "appetize-cli": "0.1.0",
+    "auto": "10.9.1",
+    "auto-plugin-appetize-cleanup": "0.1.0"
+  }
+}

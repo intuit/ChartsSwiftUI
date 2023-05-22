@@ -1,0 +1,166 @@
+# Private helper lanes
+
+    private_lane :execute_tests do
+        scan(
+            workspace: SCANDEFAULTS[:workspace],
+            clean: SCANDEFAULTS[:clean],
+            scheme: SCANDEFAULTS[:unittest_scheme],
+            code_coverage: SCANDEFAULTS[:code_coverage],
+            device: SCANDEFAULTS[:device],
+            output_types: SCANDEFAULTS[:output_types],
+            output_directory: SCANDEFAULTS[:output_directory],
+            derived_data_path: SCANDEFAULTS[:derived_data_path],
+            xcargs: "-UseModernBuildSystem=NO"
+        )
+    end # runs scan tests
+
+    # not used yet
+    private_lane :execute_ui_tests do
+        apiKey = ENV['APPLITOOLS_API_KEY']
+        batchId= ENV['APPLITOOLS_BATCH_ID']
+        scan(
+            workspace: SCANDEFAULTS[:workspace],
+            scheme: TEST_APP_NAME,
+            device: SCANDEFAULTS[:device],
+            xcargs: "APPLITOOLS_API_KEY=\"#{apiKey}\" APPLITOOLS_BATCH_ID=\"#{batchId}\" -UseModernBuildSystem=NO",
+            fail_build: true
+        )
+    end # runs scan tests
+
+    private_lane :execute_coverage do |options|
+        if options[:html] then
+            slather(
+                    workspace: SLATHERDEFAULTS[:workspace],
+                    html: true,
+                    show: true,
+                    output_directory: SLATHERDEFAULTS[:output_directory],
+                    proj: SLATHERDEFAULTS[:proj],
+                    scheme: SLATHERDEFAULTS[:scheme],
+                    ignore: SLATHERDEFAULTS[:ignore],
+                    binary_basename: SLATHERDEFAULTS[:binary_basename],
+                    build_directory: SLATHERDEFAULTS[:build_directory]
+                )
+        else
+            slather(
+                    workspace: SLATHERDEFAULTS[:workspace],
+                    cobertura_xml: SLATHERDEFAULTS[:cobertura_xml],
+                    output_directory: SLATHERDEFAULTS[:output_directory],
+                    proj: SLATHERDEFAULTS[:proj],
+                    scheme: SLATHERDEFAULTS[:scheme],
+                    ignore: SLATHERDEFAULTS[:ignore],
+                    binary_basename: SLATHERDEFAULTS[:binary_basename],
+                    build_directory: SLATHERDEFAULTS[:build_directory]
+                )
+        end
+    end # slather coverage
+
+    private_lane :build_signed_app do |options|
+        type = options[:release] ? "enterprise" : "development"
+        match_type = options[:release] ? "AppStore" : "Development"
+        configuration = options[:release] ? "Release" : "Debug"
+
+        #Build main application
+        build_ios_app(
+            workspace: WORKSPACE,
+            scheme: SCHEME,
+            configuration: configuration,
+            clean: true,
+            export_method: type,
+            output_directory: OUTPUT_DIRECTORY + "/ipa",
+            output_name: MAIN_APP_NAME + ".ipa",
+            derived_data_path: AWS_PATH
+        )
+
+
+    end # builds signed application with certificates and packages to .ipa file
+
+    private_lane :build_signed_app_for_testing do |options|
+        #Build testing application
+        xcodebuild(
+               workspace: WORKSPACE,
+               scheme: SCHEME,
+               destination: 'generic/platform=iOS',
+               configuration: 'Debug',
+               export_method: "enterprise",
+               derivedDataPath: AWS_PATH,
+               clean: true,
+               xcargs: "GCC_PREPROCESSOR_DEFINITIONS='AWS_UI_TEST COCOAPODS=1 DEBUG=1 RUN_BUILDTIME_SCRIPTS=0 GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1' ENABLE_BITCODE=NO build-for-testing"
+          )
+
+        product_path = "../" + AWS_PATH + "/Build/Products/Debug-iphoneos/"
+
+        #Create main app ipa file
+        sh("rm -rf Payload")
+        sh("mkdir Payload")
+        sh("cp -r " + product_path + MAIN_APP_NAME + "_Example.app Payload")
+        main_ipa = MAIN_APP_NAME + "_Example.ipa"
+        sh("zip -r " + main_ipa + " Payload")
+
+        #Create test app ipa file
+        sh("rm -rf Payload")
+        sh("mkdir Payload")
+        sh("cp -r " + product_path + TEST_APP_NAME + "-Runner.app Payload")
+        test_ipa = TEST_APP_NAME + ".ipa"
+        sh("zip -r " + test_ipa + " Payload")
+
+         #Move ipa files to output folder
+         ipa_folder = "../" + IPA_DIR
+         sh("rm -rf " + ipa_folder)
+         sh("mkdir -p " + ipa_folder)
+         sh("mv", main_ipa, ipa_folder)
+         sh("mv", test_ipa, ipa_folder)
+
+    end # builds signed application with certificates and packages to .ipa file
+
+    private_lane :do_lint do
+        swiftlint(
+            mode: :lint,
+            output_file: SWIFTLINTDEFAULTS[:output_file], # The path of the output file (optional)
+            config_file: SWIFTLINTDEFAULTS[:config_file],
+            reporter: SWIFTLINTDEFAULTS[:reporter],
+            ignore_exit_status: false    # Allow fastlane to continue even if SwiftLint returns a non-zero exit status
+          )
+    end
+
+    private_lane :bumpMinorVersion do
+    	# bump the minor version number
+    	increment_version_number(bump_type: "minor")
+
+    	#also bump the build number
+    	increment_build_number()
+
+    	#and check it all in
+
+    	commit_version_bump(message: "Fastlane: incremented minor version number",force: true)
+    	push_to_git_remote
+    end # bumps versions and pushes to git
+
+    private_lane :build_signed_app_for_appetize do |options|
+        appName = options[:appName]
+
+        #Build signed application
+         xcodebuild(
+            workspace: WORKSPACE,
+            scheme: SCHEME,
+            destination: 'platform=iOS Simulator,name=iPhone 11,OS=latest',
+            configuration: "Debug",
+            derivedDataPath: AWS_PATH,
+            xcargs: "GCC_PREPROCESSOR_DEFINITIONS='AWS_UI_TEST COCOAPODS=1 DEBUG=1 RUN_BUILDTIME_SCRIPTS=0 GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1' ENABLE_BITCODE=NO build-for-testing"
+        )
+
+        product_path = "../" + AWS_PATH + "/Build/Products/Debug-iphonesimulator/"
+
+        #Create main app ipa file
+        sh("rm -rf Payload")
+        sh("mkdir Payload")
+        sh("cp -r " + product_path + DISPLAY_NAME + ".app Payload")
+        main_ipa = appName + ".zip"
+        sh("zip -r " + main_ipa + " Payload")
+
+        #Move ipa files to output folder
+        ipa_folder = "../" + IPA_DIR
+        # sh("rm -rf " + ipa_folder)
+        sh("mkdir -p " + ipa_folder)
+        sh("mv", main_ipa, ipa_folder)
+
+    end # builds signed application for Appetize

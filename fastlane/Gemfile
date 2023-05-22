@@ -1,0 +1,5 @@
+source "https://rubygems.org"
+
+gem "fastlane", '2.148'
+gem "xcov"
+gem "slather"

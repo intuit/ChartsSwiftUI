@@ -1,0 +1,21 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+
+# Platform version to build against
+platform :ios, '14.0'
+
+target 'ChartsSwiftUI_Example' do
+  pod 'ChartsSwiftUI', :path => '../'
+  
+  target 'ChartsSwiftUI_Tests' do
+    inherit! :search_paths
+  end
+
+end
+
+target 'ChartsSwiftUI_ExampleUITests' do
+    inherit! :search_paths
+    pod 'ChartsSwiftUI', :path => '../'
+    pod 'SnapshotTesting'
+end

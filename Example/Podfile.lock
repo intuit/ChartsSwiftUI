@@ -1,0 +1,23 @@
+PODS:
+  - ChartsSwiftUI (0.4.0)
+  - SnapshotTesting (1.9.0)
+
+DEPENDENCIES:
+  - ChartsSwiftUI (from `../`)
+  - SnapshotTesting
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SnapshotTesting
+
+EXTERNAL SOURCES:
+  ChartsSwiftUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ChartsSwiftUI: ac7ace1e16b1fa6dc914f46d92acddaa410da295
+  SnapshotTesting: 6141c48b6aa76ead61431ca665c14ab9a066c53b
+
+PODFILE CHECKSUM: 00e967d0715e1ed16b3e91142e2a4fc45f660672
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,90 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+import('utils/globals')
+import('utils/lanehelper')
+
+xcode_select XCODE_PATH
+UI.message "Shutting down all simulators"
+`xcrun simctl shutdown all &> /dev/null`
+
+default_platform(:ios)
+platform :ios do
+    # Runs before any actions - used to setup the environment
+    before_all do |lane, options|
+        # Built-in function detecting if fastlane is running on a CI environment
+        if is_ci
+            setup_jenkins
+            `killall -9 com.apple.CoreSimulator.CoreSimulatorService`
+        end
+    end # sets up defaults before all lanes run
+
+    lane :lint do
+       do_lint
+    end
+
+    desc "Lane tests"
+    lane :tests do
+        execute_tests
+    end # executes tests
+
+    desc "Lane uitests"
+    lane :uitests do
+        execute_ui_tests
+    end # executes ui tests
+
+    desc "Lane for coverage"
+    lane :coverage do |options|
+        execute_coverage(options)
+    end # executes coverage
+
+    desc "Lane for building application"
+    # This lane works if import_certs is called beforehand
+    lane :build do |options|
+        build_signed_app(release:options[:enterprise])
+    end # executes builds the signed app
+
+    desc "Lane for building test application"
+    # This lane works if import_certs is called beforehand
+    lane :build_for_testing do |options|
+        build_signed_app_for_testing(enterprise:options[:enterprise])
+    end # executes builds the signed app
+
+    desc "Bumps build number"
+    lane :bump_build do
+        increment_build_number(xcodeproj: PROJECT)
+    end #
+
+    desc "Changes version number"
+    lane :change_version_number do |required|
+        increment_version_number(version_number: required[:new_version], xcodeproj: PROJECT)
+    end #
+
+    desc "Clean commit and push"
+    lane :clean_commit_push do |options|
+        clean_build_artifacts
+        commit_version_bump(message: "[skip ci] Committed build number bump", xcodeproj: PROJECT)
+        push_to_git_remote(
+            remote_branch: options[:remote_branch],
+            local_branch: options[:local_branch],
+            no_verify: true
+        )
+    end #
+
+    desc "build signed app for Appetize"
+    lane :build_for_appetize do |options|
+        build_signed_app_for_appetize(appName: options[:appName])
+    end #
+end # ios lane selections

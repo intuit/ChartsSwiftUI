@@ -1,0 +1,78 @@
+# format options
+--allman false
+--indent tab
+--tabwidth 4
+--ifdef outdent
+--semicolons never
+--commas inline
+
+# file options
+--exclude Pods, Carthage, EarlGrey, Gala/PullToRefresh, Gala/MD5/, Gala/Libraries/, **/GoalsGraphQLAPI.swift, **/Images.generated.swift
+
+# Enabled rules
+--enable andOperator
+--enable blankLinesAroundMark
+--enable blankLinesAtEndOfScope
+--enable blankLinesAtStartOfScope
+--enable blankLinesBetweenScopes
+--enable braces
+--enable consecutiveBlankLines
+--enable duplicateImports
+--enable elseOnSameLine
+--enable indent
+--enable leadingDelimiters
+--enable linebreaks
+--enable redundantBackticks
+--enable redundantBreak
+--enable redundantFileprivate
+--enable redundantGet
+--enable redundantInit
+--enable redundantLetError
+--enable redundantNilInit
+--enable redundantParens
+--enable redundantVoidReturnType
+--enable semicolons
+--enable sortedImports
+--enable spaceAroundBraces
+--enable spaceAroundBrackets
+--enable spaceAroundComments
+--enable spaceAroundGenerics
+--enable spaceAroundOperators
+--enable spaceAroundParens
+--enable spaceInsideBraces
+--enable spaceInsideBrackets
+--enable spaceInsideComments
+--enable spaceInsideGenerics
+--enable spaceInsideParens
+--enable specifiers
+--enable strongifiedSelf
+--enable todos
+--enable trailingClosures
+--enable trailingCommas
+--enable trailingSpace
+--enable yodaConditions
+
+# Disabled rules
+--disable anyObjectProtocol
+--disable consecutiveSpaces
+--disable emptyBraces
+--disable fileHeader
+--disable hoistPatternLet
+--disable isEmpty
+--disable linebreakAtEndOfFile
+--disable numberFormatting
+--disable redundantExtensionACL
+--disable redundantLet
+--disable redundantObjc
+--disable redundantPattern
+--disable redundantRawValues
+--disable redundantReturn
+--disable redundantSelf
+--disable sortedImports
+--disable strongOutlets
+--disable typeSugar
+--disable unusedArguments
+--disable void
+--disable wrap
+--disable wrapArguments
+--disable redundantType

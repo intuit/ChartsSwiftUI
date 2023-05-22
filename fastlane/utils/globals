@@ -1,0 +1,52 @@
+# App configuration
+
+MAIN_APP_NAME       = "ChartsSwiftUI"
+TEST_APP_NAME       = "ChartsSwiftUI_ExampleUITests"
+DISPLAY_NAME        = MAIN_APP_NAME + "_Example"
+PROJECT             = "Example/" + MAIN_APP_NAME + ".xcodeproj"
+WORKSPACE           = "Example/" + MAIN_APP_NAME + ".xcworkspace"
+SCHEME              = MAIN_APP_NAME + "-Example"
+UNITTEST_SCHEME     = SCHEME
+MAIN_APP            = "com.intuit.ios." + MAIN_APP_NAME
+TEST_APP            = "com.intuit.ios." + TEST_APP_NAME
+OUTPUT_DIRECTORY    = "output"
+AWS_PATH            = OUTPUT_DIRECTORY + '/aws'
+IPA_DIR             = OUTPUT_DIRECTORY + '/ipa'
+BUILD_DIRECTORY     = "./derivedData"
+XCODE_PATH          = ENV['XCODE_PATH'] || "/Applications/Xcode13.app"
+
+SCANDEFAULTS = {
+    scheme: SCHEME,
+    unittest_scheme: UNITTEST_SCHEME,
+    workspace: WORKSPACE,
+    clean: true,
+    code_coverage: true,
+    device: "iPhone 11",
+    derived_data_path: BUILD_DIRECTORY,
+    output_types: "junit",
+    output_directory: OUTPUT_DIRECTORY + "/junit",
+    should_zip_build_products: true
+}
+
+SLATHERDEFAULTS = {
+    cobertura_xml: true,
+    output_directory: OUTPUT_DIRECTORY + "/cobertura",
+    build_directory: BUILD_DIRECTORY,
+    workspace: WORKSPACE,
+    proj: PROJECT,
+    scheme: SCHEME,
+    ignore: ["Tests/*", "**/*UITests*"],
+    binary_basename: MAIN_APP_NAME
+}
+
+XCOVDEFAULTS = {
+    workspace: WORKSPACE,
+    scheme: SCHEME,
+    output_directory: OUTPUT_DIRECTORY + "/xcov_output"
+}
+
+SWIFTLINTDEFAULTS = {
+    output_file: OUTPUT_DIRECTORY + "/swiftlint.result.xml",
+    config_file: ".swiftlint.yml",
+    reporter: 'checkstyle'
+}

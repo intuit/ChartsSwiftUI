@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44165117273BCAD60015824D /* VerticalBarChartExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447485782739AD1900823BF9 /* VerticalBarChartExampleView.swift */; };
+		44717B97273D3AE40056EB5A /* VerticalBarChartExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44717B96273D3AE40056EB5A /* VerticalBarChartExampleViewModel.swift */; };
+		44717B99273D418A0056EB5A /* VerticalBarChartExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44717B96273D3AE40056EB5A /* VerticalBarChartExampleViewModel.swift */; };
+		44717B9C273D43D40056EB5A /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44717B9B273D43D40056EB5A /* NavigationLazyView.swift */; };
+		4474856027397F0F00823BF9 /* ChartsSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4474855F27397F0F00823BF9 /* ChartsSwiftUI.swift */; };
+		447485622739808600823BF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447485612739808600823BF9 /* ContentView.swift */; };
+		447485792739AD1900823BF9 /* VerticalBarChartExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447485782739AD1900823BF9 /* VerticalBarChartExampleView.swift */; };
+		448298D4273A7A3D00796834 /* GraphExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448298D3273A7A3D00796834 /* GraphExamples.swift */; };
+		448298D8273A84D200796834 /* VerticalBarChartViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448298D6273A83BB00796834 /* VerticalBarChartViewModelTests.swift */; };
+		44DAD0A5273C3EF700437168 /* Snapshot+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAD0A4273C3EF700437168 /* Snapshot+Extensions.swift */; };
+		44DAD0A7273C3F2600437168 /* SnapshotTestsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAD0A6273C3F2600437168 /* SnapshotTestsHelper.swift */; };
+		44DF8573274C230E004F1121 /* VerticalBarChartHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF8572274C230E004F1121 /* VerticalBarChartHelper.swift */; };
+		44DF8574274C230E004F1121 /* VerticalBarChartHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DF8572274C230E004F1121 /* VerticalBarChartHelper.swift */; };
+		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
+		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		71923A1A250A94CB00C60B3A /* ChartsSwiftUI_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71923A19250A94CB00C60B3A /* ChartsSwiftUI_ExampleUITests.swift */; };
+		B535FF28AE4C0DB3C6C64903 /* Pods_ChartsSwiftUI_ExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CC0620C2EA114D0F8DE0AD /* Pods_ChartsSwiftUI_ExampleUITests.framework */; };
+		DDD46EFDEC275BE2515722B3 /* Pods_ChartsSwiftUI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF3434B774D326D991277AA /* Pods_ChartsSwiftUI_Tests.framework */; };
+		F017D6B83266C29358EA8267 /* Pods_ChartsSwiftUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570B151602A90664472B19C0 /* Pods_ChartsSwiftUI_Example.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = ChartsSwiftUI;
+		};
+		71923A1C250A94CB00C60B3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = ChartsSwiftUI_Example;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AB4CF96CEC0E0C5786E96D6 /* Pods-ChartsSwiftUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsSwiftUI_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ChartsSwiftUI_Tests/Pods-ChartsSwiftUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		18F05D78A6F8EF31AF961C26 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		198043E58D4A7D02B3A175A1 /* ChartsSwiftUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ChartsSwiftUI.podspec; path = ../ChartsSwiftUI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2BF3434B774D326D991277AA /* Pods_ChartsSwiftUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartsSwiftUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44717B96273D3AE40056EB5A /* VerticalBarChartExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalBarChartExampleViewModel.swift; sourceTree = "<group>"; };
+		44717B9B273D43D40056EB5A /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
+		4474855F27397F0F00823BF9 /* ChartsSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsSwiftUI.swift; sourceTree = "<group>"; };
+		447485612739808600823BF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		447485782739AD1900823BF9 /* VerticalBarChartExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalBarChartExampleView.swift; sourceTree = "<group>"; };
+		448298D3273A7A3D00796834 /* GraphExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphExamples.swift; sourceTree = "<group>"; };
+		448298D6273A83BB00796834 /* VerticalBarChartViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalBarChartViewModelTests.swift; sourceTree = "<group>"; };
+		44DAD0A4273C3EF700437168 /* Snapshot+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Snapshot+Extensions.swift"; sourceTree = "<group>"; };
+		44DAD0A6273C3F2600437168 /* SnapshotTestsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTestsHelper.swift; sourceTree = "<group>"; };
+		44DF8572274C230E004F1121 /* VerticalBarChartHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalBarChartHelper.swift; sourceTree = "<group>"; };
+		570B151602A90664472B19C0 /* Pods_ChartsSwiftUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartsSwiftUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58820E5B73788E28FC876167 /* Pods-ChartsSwiftUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsSwiftUI_Tests.release.xcconfig"; path = "Target Support Files/Pods-ChartsSwiftUI_Tests/Pods-ChartsSwiftUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		59455CA8550EF29A0FF59629 /* Pods-ChartsSwiftUI_ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsSwiftUI_ExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-ChartsSwiftUI_ExampleUITests/Pods-ChartsSwiftUI_ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		607FACD01AFB9204008FA782 /* ChartsSwiftUI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsSwiftUI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		607FACE51AFB9204008FA782 /* ChartsSwiftUI_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChartsSwiftUI_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		715B2CEA250C248A00601FA2 /* iOSLibraryReferenceProject_ExampleUITests.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSLibraryReferenceProject_ExampleUITests.entitlements; sourceTree = "<group>"; };
+		71923A17250A94CB00C60B3A /* ChartsSwiftUI_ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChartsSwiftUI_ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71923A19250A94CB00C60B3A /* ChartsSwiftUI_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsSwiftUI_ExampleUITests.swift; sourceTree = "<group>"; };
+		71923A1B250A94CB00C60B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73CC0620C2EA114D0F8DE0AD /* Pods_ChartsSwiftUI_ExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartsSwiftUI_ExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C056EBB5E91EC57606BAB1D9 /* Pods-ChartsSwiftUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsSwiftUI_Example.release.xcconfig"; path = "Target Support Files/Pods-ChartsSwiftUI_Example/Pods-ChartsSwiftUI_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C4860CCB6BE1D276A7EE6D36 /* Pods-ChartsSwiftUI_ExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsSwiftUI_ExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChartsSwiftUI_ExampleUITests/Pods-ChartsSwiftUI_ExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF56BB2B3C7BB22E10043370 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F005F48F76F5995FF0A7DCD6 /* Pods-ChartsSwiftUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsSwiftUI_Example.debug.xcconfig"; path = "Target Support Files/Pods-ChartsSwiftUI_Example/Pods-ChartsSwiftUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		607FACCD1AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F017D6B83266C29358EA8267 /* Pods_ChartsSwiftUI_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE21AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD46EFDEC275BE2515722B3 /* Pods_ChartsSwiftUI_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71923A14250A94CB00C60B3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B535FF28AE4C0DB3C6C64903 /* Pods_ChartsSwiftUI_ExampleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16870772AE75989F3602257C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				570B151602A90664472B19C0 /* Pods_ChartsSwiftUI_Example.framework */,
+				73CC0620C2EA114D0F8DE0AD /* Pods_ChartsSwiftUI_ExampleUITests.framework */,
+				2BF3434B774D326D991277AA /* Pods_ChartsSwiftUI_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C6081D124E4AF2500207076 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		44717B98273D3AE70056EB5A /* VerticalBarChartExample */ = {
+			isa = PBXGroup;
+			children = (
+				44717B96273D3AE40056EB5A /* VerticalBarChartExampleViewModel.swift */,
+				447485782739AD1900823BF9 /* VerticalBarChartExampleView.swift */,
+				44DF8572274C230E004F1121 /* VerticalBarChartHelper.swift */,
+			);
+			name = VerticalBarChartExample;
+			sourceTree = "<group>";
+		};
+		44717B9A273D43C80056EB5A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				44717B9B273D43D40056EB5A /* NavigationLazyView.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		448298D5273A83A600796834 /* VerticalBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				448298D6273A83BB00796834 /* VerticalBarChartViewModelTests.swift */,
+			);
+			name = VerticalBarChart;
+			sourceTree = "<group>";
+		};
+		607FACC71AFB9204008FA782 = {
+			isa = PBXGroup;
+			children = (
+				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				607FACD21AFB9204008FA782 /* Example for ChartsSwiftUI */,
+				607FACE81AFB9204008FA782 /* Tests */,
+				71923A18250A94CB00C60B3A /* ChartsSwiftUI_ExampleUITests */,
+				607FACD11AFB9204008FA782 /* Products */,
+				9F30D21B678D425E82CA9227 /* Pods */,
+				16870772AE75989F3602257C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		607FACD11AFB9204008FA782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD01AFB9204008FA782 /* ChartsSwiftUI_Example.app */,
+				607FACE51AFB9204008FA782 /* ChartsSwiftUI_Tests.xctest */,
+				71923A17250A94CB00C60B3A /* ChartsSwiftUI_ExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		607FACD21AFB9204008FA782 /* Example for ChartsSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				44717B9A273D43C80056EB5A /* Utils */,
+				44717B98273D3AE70056EB5A /* VerticalBarChartExample */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				3C6081D124E4AF2500207076 /* Resources */,
+				607FACD31AFB9204008FA782 /* Supporting Files */,
+				4474855F27397F0F00823BF9 /* ChartsSwiftUI.swift */,
+				447485612739808600823BF9 /* ContentView.swift */,
+				448298D3273A7A3D00796834 /* GraphExamples.swift */,
+			);
+			name = "Example for ChartsSwiftUI";
+			path = ChartsSwiftUI;
+			sourceTree = "<group>";
+		};
+		607FACD31AFB9204008FA782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD41AFB9204008FA782 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		607FACE81AFB9204008FA782 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				448298D5273A83A600796834 /* VerticalBarChart */,
+				607FACE91AFB9204008FA782 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		607FACE91AFB9204008FA782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				607FACEA1AFB9204008FA782 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				198043E58D4A7D02B3A175A1 /* ChartsSwiftUI.podspec */,
+				18F05D78A6F8EF31AF961C26 /* README.md */,
+				CF56BB2B3C7BB22E10043370 /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		71923A18250A94CB00C60B3A /* ChartsSwiftUI_ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				71923A19250A94CB00C60B3A /* ChartsSwiftUI_ExampleUITests.swift */,
+				71923A1B250A94CB00C60B3A /* Info.plist */,
+				715B2CEA250C248A00601FA2 /* iOSLibraryReferenceProject_ExampleUITests.entitlements */,
+				44DAD0A4273C3EF700437168 /* Snapshot+Extensions.swift */,
+				44DAD0A6273C3F2600437168 /* SnapshotTestsHelper.swift */,
+			);
+			path = ChartsSwiftUI_ExampleUITests;
+			sourceTree = "<group>";
+		};
+		9F30D21B678D425E82CA9227 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F005F48F76F5995FF0A7DCD6 /* Pods-ChartsSwiftUI_Example.debug.xcconfig */,
+				C056EBB5E91EC57606BAB1D9 /* Pods-ChartsSwiftUI_Example.release.xcconfig */,
+				C4860CCB6BE1D276A7EE6D36 /* Pods-ChartsSwiftUI_ExampleUITests.debug.xcconfig */,
+				59455CA8550EF29A0FF59629 /* Pods-ChartsSwiftUI_ExampleUITests.release.xcconfig */,
+				0AB4CF96CEC0E0C5786E96D6 /* Pods-ChartsSwiftUI_Tests.debug.xcconfig */,
+				58820E5B73788E28FC876167 /* Pods-ChartsSwiftUI_Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		607FACCF1AFB9204008FA782 /* ChartsSwiftUI_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ChartsSwiftUI_Example" */;
+			buildPhases = (
+				E00C5AA6400D95731EEEB2AB /* [CP] Check Pods Manifest.lock */,
+				607FACCC1AFB9204008FA782 /* Sources */,
+				607FACCD1AFB9204008FA782 /* Frameworks */,
+				607FACCE1AFB9204008FA782 /* Resources */,
+				789DEB2BE2F38FFDFF30FF0C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChartsSwiftUI_Example;
+			productName = ChartsSwiftUI;
+			productReference = 607FACD01AFB9204008FA782 /* ChartsSwiftUI_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		607FACE41AFB9204008FA782 /* ChartsSwiftUI_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ChartsSwiftUI_Tests" */;
+			buildPhases = (
+				7EA2AED09EEB49205F4DAF5F /* [CP] Check Pods Manifest.lock */,
+				607FACE11AFB9204008FA782 /* Sources */,
+				607FACE21AFB9204008FA782 /* Frameworks */,
+				607FACE31AFB9204008FA782 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
+			);
+			name = ChartsSwiftUI_Tests;
+			productName = Tests;
+			productReference = 607FACE51AFB9204008FA782 /* ChartsSwiftUI_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		71923A16250A94CB00C60B3A /* ChartsSwiftUI_ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71923A1E250A94CB00C60B3A /* Build configuration list for PBXNativeTarget "ChartsSwiftUI_ExampleUITests" */;
+			buildPhases = (
+				E098D72C68085EEAFFF15833 /* [CP] Check Pods Manifest.lock */,
+				71923A13250A94CB00C60B3A /* Sources */,
+				71923A14250A94CB00C60B3A /* Frameworks */,
+				71923A15250A94CB00C60B3A /* Resources */,
+				E9E0F8CB10D5AEEA6DDDA0DC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71923A1D250A94CB00C60B3A /* PBXTargetDependency */,
+			);
+			name = ChartsSwiftUI_ExampleUITests;
+			productName = ChartsSwiftUI_ExampleUITests;
+			productReference = 71923A17250A94CB00C60B3A /* ChartsSwiftUI_ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		607FACC81AFB9204008FA782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = CocoaPods;
+				TargetAttributes = {
+					607FACCF1AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = F6DWWXWEX6;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Manual;
+					};
+					607FACE41AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = F6DWWXWEX6;
+						LastSwiftMigration = 0900;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					71923A16250A94CB00C60B3A = {
+						CreatedOnToolsVersion = 11.7;
+						DevelopmentTeam = F6DWWXWEX6;
+						ProvisioningStyle = Manual;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+				};
+			};
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "ChartsSwiftUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 607FACC71AFB9204008FA782;
+			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				607FACCF1AFB9204008FA782 /* ChartsSwiftUI_Example */,
+				607FACE41AFB9204008FA782 /* ChartsSwiftUI_Tests */,
+				71923A16250A94CB00C60B3A /* ChartsSwiftUI_ExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		607FACCE1AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE31AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71923A15250A94CB00C60B3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		789DEB2BE2F38FFDFF30FF0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartsSwiftUI_Example/Pods-ChartsSwiftUI_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChartsSwiftUI/ChartsSwiftUI.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChartsSwiftUI.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChartsSwiftUI_Example/Pods-ChartsSwiftUI_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EA2AED09EEB49205F4DAF5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChartsSwiftUI_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E00C5AA6400D95731EEEB2AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChartsSwiftUI_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E098D72C68085EEAFFF15833 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChartsSwiftUI_ExampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9E0F8CB10D5AEEA6DDDA0DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartsSwiftUI_ExampleUITests/Pods-ChartsSwiftUI_ExampleUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChartsSwiftUI/ChartsSwiftUI.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapshotTesting/SnapshotTesting.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChartsSwiftUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapshotTesting.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChartsSwiftUI_ExampleUITests/Pods-ChartsSwiftUI_ExampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		607FACCC1AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447485792739AD1900823BF9 /* VerticalBarChartExampleView.swift in Sources */,
+				44DF8573274C230E004F1121 /* VerticalBarChartHelper.swift in Sources */,
+				4474856027397F0F00823BF9 /* ChartsSwiftUI.swift in Sources */,
+				44717B9C273D43D40056EB5A /* NavigationLazyView.swift in Sources */,
+				44717B97273D3AE40056EB5A /* VerticalBarChartExampleViewModel.swift in Sources */,
+				447485622739808600823BF9 /* ContentView.swift in Sources */,
+				448298D4273A7A3D00796834 /* GraphExamples.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE11AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				448298D8273A84D200796834 /* VerticalBarChartViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71923A13250A94CB00C60B3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DF8574274C230E004F1121 /* VerticalBarChartHelper.swift in Sources */,
+				44DAD0A5273C3EF700437168 /* Snapshot+Extensions.swift in Sources */,
+				44165117273BCAD60015824D /* VerticalBarChartExampleView.swift in Sources */,
+				44717B99273D418A0056EB5A /* VerticalBarChartExampleViewModel.swift in Sources */,
+				71923A1A250A94CB00C60B3A /* ChartsSwiftUI_ExampleUITests.swift in Sources */,
+				44DAD0A7273C3F2600437168 /* SnapshotTestsHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* ChartsSwiftUI_Example */;
+			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+		71923A1D250A94CB00C60B3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* ChartsSwiftUI_Example */;
+			targetProxy = 71923A1C250A94CB00C60B3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				607FACDF1AFB9204008FA782 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		607FACED1AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		607FACEE1AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		607FACF01AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F005F48F76F5995FF0A7DCD6 /* Pods-ChartsSwiftUI_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 26;
+				DEVELOPMENT_TEAM = F6DWWXWEX6;
+				INFOPLIST_FILE = ChartsSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intuit.ChartsSwiftUI-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5276a5c6-e1f9-4f24-8b4d-a6178b5a5adf";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		607FACF11AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C056EBB5E91EC57606BAB1D9 /* Pods-ChartsSwiftUI_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 26;
+				DEVELOPMENT_TEAM = F6DWWXWEX6;
+				INFOPLIST_FILE = ChartsSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intuit.ChartsSwiftUI-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5276a5c6-e1f9-4f24-8b4d-a6178b5a5adf";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		607FACF31AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AB4CF96CEC0E0C5786E96D6 /* Pods-ChartsSwiftUI_Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F6DWWXWEX6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intuit.ChartsSwiftUI-UnitTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChartsSwiftUI_Example.app/ChartsSwiftUI_Example";
+			};
+			name = Debug;
+		};
+		607FACF41AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58820E5B73788E28FC876167 /* Pods-ChartsSwiftUI_Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F6DWWXWEX6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intuit.ChartsSwiftUI-UnitTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChartsSwiftUI_Example.app/ChartsSwiftUI_Example";
+			};
+			name = Release;
+		};
+		71923A1F250A94CB00C60B3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4860CCB6BE1D276A7EE6D36 /* Pods-ChartsSwiftUI_ExampleUITests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = ChartsSwiftUI_ExampleUITests/iOSLibraryReferenceProject_ExampleUITests.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = F6DWWXWEX6;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ChartsSwiftUI_ExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intuit.ChartsSwiftUI-UITest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5276a5c6-e1f9-4f24-8b4d-a6178b5a5adf";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChartsSwiftUI_Example;
+			};
+			name = Debug;
+		};
+		71923A20250A94CB00C60B3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59455CA8550EF29A0FF59629 /* Pods-ChartsSwiftUI_ExampleUITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = ChartsSwiftUI_ExampleUITests/iOSLibraryReferenceProject_ExampleUITests.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = F6DWWXWEX6;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ChartsSwiftUI_ExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.intuit.ChartsSwiftUI-UITest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5276a5c6-e1f9-4f24-8b4d-a6178b5a5adf";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChartsSwiftUI_Example;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "ChartsSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACED1AFB9204008FA782 /* Debug */,
+				607FACEE1AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ChartsSwiftUI_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF01AFB9204008FA782 /* Debug */,
+				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ChartsSwiftUI_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF31AFB9204008FA782 /* Debug */,
+				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71923A1E250A94CB00C60B3A /* Build configuration list for PBXNativeTarget "ChartsSwiftUI_ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71923A1F250A94CB00C60B3A /* Debug */,
+				71923A20250A94CB00C60B3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
+}

@@ -103,4 +103,3 @@ Feature requests, bug reports, and pull requests are all welcome. Refer <a href=
 
 ## License
 ChartsSwiftUI is available under the Apache 2.0 license. See the LICENSE file for more info.
-

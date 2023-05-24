@@ -5,6 +5,7 @@
 //  Created by rsingh26 on 23/11/21.
 //
 
+#if !os(macOS)
 import Foundation
 import SwiftUI
 
@@ -52,3 +53,4 @@ internal struct BarViewWithBorder: View {
         }
     }
 }
+#endif

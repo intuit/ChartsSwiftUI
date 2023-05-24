@@ -5,6 +5,8 @@
 //  Created by rsingh26 on 08/11/21.
 //
 
+#if !os(macOS)
+
 import Foundation
 import SwiftUI
 
@@ -215,3 +217,5 @@ extension VerticalBarChartViewModel {
         self.seperatorPosition = self.xAxisPosition + (seperator.value * barsScaleFactor)
     }
 }
+
+#endif

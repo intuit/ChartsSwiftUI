@@ -5,6 +5,8 @@
 //  Created by rsingh26 on 09/11/21.
 //
 
+#if !os(macOS)
+
 import Foundation
 import SwiftUI
 
@@ -25,3 +27,5 @@ internal struct RoundedCorner: InsettableShape {
         return roundedCorner
     }
 }
+
+#endif

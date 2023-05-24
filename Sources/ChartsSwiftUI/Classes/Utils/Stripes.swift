@@ -5,6 +5,8 @@
 //  Created by rsingh26 on 09/11/21.
 //
 
+#if !os(macOS)
+
 import Foundation
 import SwiftUI
 
@@ -62,3 +64,5 @@ public struct Stripes: View {
         .cornerRadius(config.cornerRadius, corners: config.corners)
     }
 }
+
+#endif

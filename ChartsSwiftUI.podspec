@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                    = 'ChartsSwiftUI'
-  s.version                 = '0.1.3'
+  s.version                 = '0.1.4'
   s.summary                 = 'Charts built in SwiftUI'
   s.platform                = :ios
   s.ios.deployment_target   = '13.0'
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.author                  = { 'Intuit' => '' }
   s.source                  = { :git => 'https://github.com/intuit/ChartsSwiftUI.git', :tag => s.version.to_s }
   
-  s.source_files            = ['ChartsSwiftUI/Classes/**/*']
+  s.source_files            = ['Sources/ChartsSwiftUI/Classes/**/*']
   
   # s.resources               = [ 'ChartsSwiftUI/Assets/**/*.xcassets',
   #                               'ChartsSwiftUI/Assets/**/*.json' ]

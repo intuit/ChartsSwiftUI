@@ -5,6 +5,7 @@
 //  Created by rsingh26 on 08/11/21.
 //
 
+#if !os(macOS)
 import Foundation
 import SwiftUI
 
@@ -41,3 +42,4 @@ internal extension View {
         return AnyView(self.redacted(reason: dataLoaded ? [] : .placeholder))
     }
 }
+#endif

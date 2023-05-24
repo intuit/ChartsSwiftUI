@@ -5,6 +5,8 @@
 //  Created by rsingh26 on 08/11/21.
 //
 
+#if !os(macOS)
+
 import Foundation
 import SwiftUI
 
@@ -30,3 +32,5 @@ internal struct BarViewSolid: View {
             .cornerRadius(cornerRadius, corners: corners)
     }
 }
+
+#endif

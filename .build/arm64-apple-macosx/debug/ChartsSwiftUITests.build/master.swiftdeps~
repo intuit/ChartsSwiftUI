@@ -1,6 +1,0 @@
-version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
-options: "ea8f9ef3a57f706411187539b8a49d4e6fc232f609cfc0b3ddb57b5f4982c138"
-build_start_time: [1684946370, 996945858]
-build_end_time: [1684946378, 25043010]
-inputs:
-  "/Users/rsingh26/Documents/PERSONAL/ChartsSwiftUI/Tests/ChartsSwiftUITests/ChartsSwiftUITests.swift": !private [1684910207, 816747903]

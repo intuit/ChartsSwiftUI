@@ -1,4 +1,0 @@
-module ChartsSwiftUI {
-    header "/Users/rsingh26/Documents/PERSONAL/ChartsSwiftUI/.build/arm64-apple-macosx/debug/ChartsSwiftUI.build/ChartsSwiftUI-Swift.h"
-    requires objc
-}

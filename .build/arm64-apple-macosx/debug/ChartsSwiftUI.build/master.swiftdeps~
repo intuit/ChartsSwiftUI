@@ -1,0 +1,20 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "ac268c9cd673cd2dbc078a29196b53aacdb5a085d0fd96add72d934f15472e58"
+build_start_time: [1684912575, 887333869]
+build_end_time: [1684912599, 708836078]
+inputs:
+  "/Users/rsingh26/Documents/PERSONAL/ChartsSwiftUI/Sources/ChartsSwiftUI/Classes/Extensions/View+Extension.swift": !private [1684755878, 607097148]
+  "/Users/rsingh26/Documents/PERSONAL/ChartsSwiftUI/Sources/ChartsSwiftUI/Classes/Utils/BarBorder.swift": !private [1684755878, 607204675]
+  "/Users/rsingh26/Documents/PERSONAL/ChartsSwiftUI/Sources/ChartsSwiftUI/Classes/Utils/BarViewSolid.swift": !private [1684755878, 607295989]
+  "/Users/rsingh26/Documents/PERSONAL/ChartsSwiftUI/Sources/ChartsSwiftUI/Classes/Utils/BarViewWithBorder.swift": !private [1684755878, 607365608]
+  "/Users/rsingh26/Documents/PERSONAL/ChartsSwiftUI/Sources/ChartsSwiftUI/Classes/Utils/LineShape.swift": !private [1684755878, 607431173]
+  "/Users/rsingh26/Documents/PERSONAL/ChartsSwiftUI/Sources/ChartsSwiftUI/Classes/Utils/RoundedCorner.swift": !private [1684755878, 607500314]
+  "/Users/rsingh26/Documents/PERSONAL/ChartsSwiftUI/Sources/ChartsSwiftUI/Classes/Utils/SeparatorView.swift": !private [1684755878, 607571601]
+  "/Users/rsingh26/Documents/PERSONAL/ChartsSwiftUI/Sources/ChartsSwiftUI/Classes/Utils/Shimmer.swift": !private [1684755878, 607649087]
+  "/Users/rsingh26/Documents/PERSONAL/ChartsSwiftUI/Sources/ChartsSwiftUI/Classes/Utils/Stripes.swift": !private [1684755878, 607726812]
+  ? "/Users/rsingh26/Documents/PERSONAL/ChartsSwiftUI/Sources/ChartsSwiftUI/Classes/VerticalBarChart/VerticalBarChartAccessibility.swift"
+  : [1684755878, 607837438]
+  "/Users/rsingh26/Documents/PERSONAL/ChartsSwiftUI/Sources/ChartsSwiftUI/Classes/VerticalBarChart/VerticalBarChartStyleGuide.swift": [1684755878, 607913017]
+  "/Users/rsingh26/Documents/PERSONAL/ChartsSwiftUI/Sources/ChartsSwiftUI/Classes/VerticalBarChart/VerticalBarChartView+Input.swift": !private [1684755878, 607986450]
+  "/Users/rsingh26/Documents/PERSONAL/ChartsSwiftUI/Sources/ChartsSwiftUI/Classes/VerticalBarChart/VerticalBarChartView.swift": !private [1684755878, 608107089]
+  "/Users/rsingh26/Documents/PERSONAL/ChartsSwiftUI/Sources/ChartsSwiftUI/Classes/VerticalBarChart/VerticalBarChartViewModel.swift": !private [1684755878, 608211040]

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                    = 'ChartsSwiftUI'
-  s.version                 = '0.1.4'
+  s.version                 = '0.1.5'
   s.summary                 = 'Charts built in SwiftUI'
   s.platform                = :ios
   s.ios.deployment_target   = '13.0'
